@@ -85,7 +85,7 @@ namespace Hashing {
     ///Tested on https://toph.co/p/chikongunia
     ///replaces the i-th (0-indexed) character from right from a to b;
     PLL replace(PLL cur, int i, char a, char b) {
-        return cur + pb[i] * (M+b-a)%M;
+        return (cur + pb[i] * (M+b-a)%M)%M;
     }
 
     ///Erases c from front of the string with size len
